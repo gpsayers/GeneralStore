@@ -1,7 +1,47 @@
-﻿
+﻿@model GeneralStoreCore.Models.GameSettingsModel
+
 @{
     ViewBag.Title = "NewGame";
 }
 
-<h2>NewGame</h2>
+<h2>New Game</h2>
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Name Your Store</legend>
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.storeName)
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.storeName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.storeOwner)
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.storeOwner)
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" value="Take Over Store" />
+                </td>
+            </tr>
+        </table>
+
+
+
+
+    </fieldset>
+}
 

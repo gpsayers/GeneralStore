@@ -131,7 +131,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="SavedGames\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeneralStoreCore\GeneralStoreCore.csproj">
+      <Project>{f7de8747-64d1-4fbb-bbd7-ac73b5621435}</Project>
+      <Name>GeneralStoreCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
